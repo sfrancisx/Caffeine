@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Uten tilgang til din nøkkelring, kan vi ikke lagre dine påloggingsdetaljer";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Det oppstod en feil (%d) da vi skulle gå inn på din nøkkelring – ta kontakt med Caffeine kundestøtte om dette fortsetter";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Du kjører en veldig gammel versjon av Caffeine, og du bør oppgradere den";
+
+/* why we ask for location access */
+"locpurpose" = "Caffeine kan også dele din plassering med vennene dine, om du vil";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Det oppstod en uventet feil. Start Caffeine på nytt";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Lagre";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Takk for at du sender inn diagnose";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Svar";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Krever manuell innsendelse av logg – du kan finne zip på ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Innsending av logger mislyktes – Fjern eller gi filen først nytt navn på ~/Downloads/CaffeineLogs.zip og prøv på nytt";
+
+/* Notification that you were disconnected */
+"disconnected" = "Du ble koblet fra Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Logg av";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Logg av alle steder";
+
+/* A new update is available to install  */
+"updateAvailable" = "En ny oppdatering er tilgjengelig for installering, men du må avslutte programmet";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Kunne ikke laste inn URL med feil";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Vent";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "En ny oppdatering er tilgjengelig for installasjon, vil du installere den nå og starte på nytt?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "En ny oppdatering er tilgjengelig for installasjon, trykk OK for å installere den og starte på nytt";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "En ny oppdatering ble funnet, og har blitt lastet ned automatisk";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine kan ikke oppdatere automatisk fordi den er installert i et bilde som bare kan leses. Kopier den til /Programmer for å holde den oppdatert";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Kan ikke flyttes til programmappen";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Ikke flytt den";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Jeg kan flytte meg selv til programmappen på egen hånd hvis du vil.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Flytt til programmappe";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Vil du flytte den til programmappen i hjemmemappen din?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Vil du flytte den til programmappen?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Vær klar over at du trenger et administratorpassord.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "På denne måten unngår du rot i nedlastingsmappen din.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine prøver allerede å laste ned en oppdatering";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine er allerede valgt som standardbehandler for YMSGR-koblinger";
+
+/* About menu item */
+"about" = "Om";
+

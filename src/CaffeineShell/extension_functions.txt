@@ -1,0 +1,83 @@
+Function                            Platforms                           Async   Comments                        Needs to change
+===============================================================================================================================================
+activateApp                         Both (Mac only implementation)      Y       No callback; is this the same   Y
+                                                                                thing conceptually as 
+                                                                                activateWindow()?
+activateWindow                      Both                                Y       No callback                     Y
+closeSocket                         Both                                Y       Different semantics             Y
+createSocket                        Both                                Y       Different semantics             Y
+decrypt                             Both                                N       *Assuming same                  N
+deleteCrashLogs                     Both (Windows only implementation)  N                                       Y
+dockedWindow                        Both                                Y                                       Probably
+enableSessionMenus                  Both (Mac only implementation)      Y       Replace w/ setBrowserValue      Y (missing callback)
+encrypt                             Both                                N       *Assuming same                  N
+getAllPersistentValues              Both                                N       *Assuming same                  N
+getChannelGUIDs                     Windows                             N       Doesn't make sense on Mac       N
+getCrashLogCount                    Both (Windows only implementation)  N                                       Probably
+getDownloadDirectoryFromUser        Both                                Y       *Assuming same                  N
+getDownloadPathFromUser             Both                                Y       *Assuming same                  N
+getInstalledPlayers                 Both                                Y       *Assuming same; not enabled     N
+getInstallerStats                   Windows                             N       Add to Mac? Rename?             Not sure
+getIP                               Both                                N       *Assuming same                  N
+getIPbyName                         Both                                N       *Assuming same                  N
+getITunesTrackInfo                  Both                                Y       Multiple impls on Windows       Y + may need to be cleaned up
+getLangCode                         Windows                             N       Doesn't make sense on Mac       N
+getLatestVersion                    Windows                             N       Should we have a Mac version?   Not sure
+getLocale                           Both                                N                                       N
+getPersistentValue                  Both                                N                                       N
+getUpdateChannel                    Both                                N                                       N
+getUserToken                        Both                                N                                       N
+getUTF8Size                         Both                                N       Shared Implementation           N
+getWindow                           Both                                N       Remove.                         Y
+getWindowState                      Windows                             N       Add to Mac?                     Probably
+getZippedLogFiles                   Both (Mac only implementation)      N       Add to Windows?                 Not sure       
+hasFocus                            Both                                N                                       N
+hideToastWindow                     Both                                Y       Remove.                         Y
+hideWindow                          Both                                Y       Do we want to make this synch   Not sure
+isHostPortOpen                      Windows                             N       This is part of the reason for  Maybe
+                                                                                the diff. platform semantics
+isInternalIP                        Both                                N       Might have different semantics  Not sure
+isITunesOn                          Both                                Y       *Assuming same; not enabled     N                  
+ITunesPlayPreview                   Both                                Y       *Assuming same; bad name; not   N
+                                                                                enabled.
+messageReceived                     Both                                Y       bad name.                       Y (missing callback)
+moveWindowTo                        Both                                Y       bad name.                       Y (missing callback)
+openFile                            Both                                Y       *Assuming same                  Y (missing callback)
+popupWindow                         Both                                Y       *Assuming same                  Y (missing callback)
+removeAllUserTokens                 Both                                Y(Mac)/ Need to settle on semantics     Y
+                                                                        N(Win)
+removePersistentValue               Both                                N                                       N
+removeUserToken                     Both                                Y(Mac)/ Need to settle on semantics     Y
+                                                                        N(Win)
+resetDownloadDirectory              Both                                Y                                       N
+restartApplication                  Windows                             Y       Add to Mac?                     Y (missing callback)
+sendIPC                             Both                                Y                                       Y (missing callback)
+setBadgeCount                       Both (Mac only implementation)      Y                                       Y (missing callback)
+setBrowserValue                     Both (Mac only implementation)      Y       May have a security issue. Add  Y (missing callback + security fix)
+                                                                                to Win?      
+setCookie                           Both                                Y       Shared implementation           N
+setDownloadPath                     Both                                Y                                       N
+setEphemeralState                   Windows                             Y                                       Y (missing callback)
+setLangCode                         Windows                             N       Need a setLocale() too          N
+setPersistentValue                  Both                                N                                       N
+setPrefixMapping                    Both                                Y       Can we remove this?             Y (remove or missing callback)
+setUserAgent                        Both                                Y       Shared implementation; remove?  Y (remove or missing callback)
+setUserToken                        Both                                Y(Mac)/ Need to settle on semantics     Y
+                                                                        N(Win)
+shellSetsLocation                   Both                                N       Do we still need this; should   Y
+                                                                                implement as a state in ctx
+showDirectory                       Both                                Y                                       Y (missing callback)
+showFileSaveAsDialog                Both                                N       Should just be a bool in ctx?   Maybe
+showToastWindow                     Both                                Y       Does nothing; remove            Y
+showViewMenu                        Both (Mac only implementation)      Y       Is this used?                   Y (remove or add a callback)
+showWindow                          Both                                Y                                       Y (missing callback)
+startFlashing                       Both                                Y       No callback, but that's fine    N
+stateIsNowLoggedIn                  Both                                Y       Why not use setBrowserValue()   Y (remove or add callback)
+stopFlashing                        Both                                Y       No callback, but that's fine    N
+toastWindow                         Windows                             Y                                       Y (missing callback)
+triggerDump                         Both (Win only implementation)      Y       Add to Mac?                     Y                 
+uploadCrashLogs                     Windows                             N       The actual request is async.    Y (if possible)
+                                                                                The whole req is in memory
+writeSocket                         Both                                Y       Different Semantics             Y
+
+Missing:  setLocale()

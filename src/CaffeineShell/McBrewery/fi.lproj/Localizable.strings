@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Sisäänkirjautumistunnuksiasi ei voida tallentaa, jos Keychain-järjestelmään ei päästä.";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Keychain-järjestelmäsi käytössä ilmeni virhe (%d). Jos virhe toistuu, ota yhteyttä Caffeine-asiakastukeen";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Sinulla on käytössä hyvin vanha versio Caffeine -sovelluksesta ja se tulisi päivittää.";
+
+/* why we ask for location access */
+"locpurpose" = "Vaihtoehtoisesti Caffeine voi jakaa sijaintisi ystäviesi kanssa.";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Tapahtui odottamaton virhe. Käynnistä Caffeine uudelleen";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Tallenna";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Kiitos virhetietojen lähettämisestä";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Vastaa";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Vaatii lokin manuaalisen lähetyksen – zip-tiedosto on kansiossa ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Lokien lähetys epäonnistui – Poista ensin tiedosto tai nimeä se uudelleen polussa ~/Downloads/CaffeineLogs.zip and then try again";
+
+/* Notification that you were disconnected */
+"disconnected" = "Yhteytesi Caffeine -sovellukseen katkaistiin";
+
+/* Sign out menu item */
+"disconnect" = "Kirjaudu ulos";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Kirjaudu ulos kaikkialla";
+
+/* A new update is available to install  */
+"updateAvailable" = "Päivitys on saatavilla, mutta sovellus pitää sulkea ennen sen asennusta";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "URL-osoitteen lataus epäonnistui, virhe";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Odota";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Uusi päivitys on saatavilla, haluatko asentaa sen heti ja avata sovelluksen uudelleen?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Uusi päivitys on saatavilla. Paina OK, niin se asennetaan ja sovellus avataan uudelleen";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Uusi päivitys löydettiin ja ladattiin automaattisesti";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine ei voi käyttää automaattista päivitystä, sillä se on asennettu sijaintiin, johon on vain lukuoikeus. Siirrä se kansioon /Ohjelmat, jotta se voidaan päivittää";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Ei voitu siirtää Ohjelmat-kansioon";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Älä siirrä";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Ohjelma voidaan siirtää itsenäisesti, jos annat luvan.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Siirrä tämä Ohjelmat-kansioon";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Siirretäänkö tämä kotikansiosi Ohjelmat-kansioon?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Siirretäänkö tämä Ohjelmat-kansioon?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Huomaa, että tämä vaatii järjestelmänvalvojan salasanan.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Tämä pitää Lataukset-kansiosi siistimpänä.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine yrittää jo ladata päivitystä";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine on jo oletusohjelma YMSGR-linkeille";
+
+/* About menu item */
+"about" = "Tietoja";
+

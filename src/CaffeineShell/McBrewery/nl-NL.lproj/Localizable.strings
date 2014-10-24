@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Zonder toegang tot je sleutelketen is het niet mogelijk om je aanmeldingsgegevens op te slaan";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Er is een fout opgetreden (%d) tijdens het openen van je sleutelketen. Neem contact op met de klantenservice van Caffeine als dit probleem zich blijft voordoen.";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Je gebruikt een zeer oude versie van Caffeine en we raden je aan om je versie bij te werken";
+
+/* why we ask for location access */
+"locpurpose" = "Als optionele functie kan Caffeine je locatie met je vrienden delen";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Er is een onverwachte fout opgetreden. Start Caffeine opnieuw op";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Opslaan";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Bedankt voor het indienen van diagnostische gegevens";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Beantwoorden";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Vereist handmatige indiening van logboek - Je vindt het zip-bestand op ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Indienen van logboeken is mislukt - Verwijder het bestand of geef het bestand een nieuwe naam (~/Downloads/CaffeineLogs.zip) en probeer het opnieuw";
+
+/* Notification that you were disconnected */
+"disconnected" = "De verbinding met Caffeine is verbroken";
+
+/* Sign out menu item */
+"disconnect" = "Afmelden";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Overal afmelden";
+
+/* A new update is available to install  */
+"updateAvailable" = "Er is een nieuwe update die kan worden geïnstalleerd, maar dan moet je eerst de applicatie afsluiten";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Het laden van de URL is mislukt met fout";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Wachten";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Er is een nieuwe update beschikbaar voor installatie. Wilt u deze nu installeren en opnieuw opstarten?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Er is een nieuwe update beschikbaar voor installatie. Druk op OK om te installeren en opnieuw op te starten.";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Er is een nieuwe update gevonden. Deze is automatisch gedownload.";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine kan niet automatisch worden bijgewerkt als het is geïnstalleerd in een alleen-lezen-afbeelding; kopieer het naar /Toepassingen om het -up-to-date te houden";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Kan niet verplaatsen naar Toepassingenmap";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Niet verplaatsen";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Ik kan mezelf naar de Toepassingenmap verplaatsen als je wilt.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Verplaatsen naar Toepassingenmap";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Verplaatsen naar Toepassingenmap in je startmap?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Verplaatsen naar Toepassingenmap?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Let erop dat hiervoor een beheerderswachtwoord is vereist.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Hierdoor blijft je Downloadsmap ordelijk.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine probeert al een update te downloaden";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine is al de standaardhandler voor YMSGR-koppelingen";
+
+/* About menu item */
+"about" = "Over";
+

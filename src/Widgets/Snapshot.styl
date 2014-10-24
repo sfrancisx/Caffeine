@@ -1,0 +1,98 @@
+/*
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+ */
+
+.snapshot {
+	video {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -50%;
+		height: 100%;
+		z-index: -1;
+		-webkit-transform:rotateY(180deg);        
+		pointer-events: none;	
+
+	}
+	
+    .guide {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: 50%;
+        width: 320px;
+        height: 320px;
+		margin: -160px 0 0 -160px;
+        border-radius: 50%;
+    	box-shadow: 0 0 0 5000px rgba(0,0,0,.5);
+	    background-position: 0 0;
+        background-size: auto 320px;
+    	background-repeat: no-repeat;
+    }
+
+	.icn-shutter {
+        position: absolute;
+        left: 50%;
+        bottom: 24px;
+        margin-left: -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -webkit-mask: url("../src/Assets/images/icn-shutter.svg") no-repeat 50% 50%;
+        -webkit-mask-size: 78px;
+        z-index: 1;
+        display: none;
+        text-indent: -9999px;
+    }
+
+	.menu {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		top: auto;
+		text-align: left;
+
+		&.hidden {
+			display: none;
+		}
+
+		li[data-on] {
+			color: green;
+		}
+	}
+
+	.filterhack {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		z-index: 5;
+		background: transparent;
+	}
+
+	&.ready {
+		.icn-shutter { display: block; }
+	}
+ 
+	&[data-flash="true"] {
+		video {
+			-webkit-animation: flash .5s;
+			-webkit-animation-fill-mode: forwards;
+		}
+	}
+
+}
+
+@keyframes flash {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

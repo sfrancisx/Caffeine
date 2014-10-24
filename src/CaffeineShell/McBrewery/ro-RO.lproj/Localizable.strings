@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Fără a avea acces la datele dvs., nu se vor putea salva credențialele dvs. de autentificare";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "A apărut o eroare (%d) la accesarea informațiilor de utilizator - dacă eroarea persistă, contactaţi Asistenţa Caffeine";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Utilizați o versiune foarte veche de Caffeine Caffeine şi ar trebui să faceţi upgrade";
+
+/* why we ask for location access */
+"locpurpose" = "Opţional, Caffeine vă poate partaja locaţia cu prietenii";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "A fost o eroare neaşteptată. Reporniţi Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Salvare";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Vă mulţumim pentru trimiterea diagnosticărilor!";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Răspuns";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Este necesară trimiterea manuală a jurnalului - găsiţi arhiva la ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Imposibil de trimis jurnalele - Mai întâi eliminaţi sau redenumiţi fişierul la ~/Downloads/CaffeineLogs.zip şi încercaţi din nou";
+
+/* Notification that you were disconnected */
+"disconnected" = "Aţi fost deconectat(ă) de la Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Deconectare";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Deconectare de peste tot";
+
+/* A new update is available to install  */
+"updateAvailable" = "O nouă actualizare este disponibilă şi poate fi instalat, însă trebuie să ieşiţi din aplicaţie.";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Nu s-a reuşit încărcarea URL-ului şi a fost generată o eroare";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Aşteptaţi";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "O nouă actualizare este disponibilă pentru a fi instalată; doriţi să o instalaţi acum şi să reporniţi?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "O nouă actualizare este disponibilă pentru a fi instalată; apăsaţi OK pentru instalare şi repornire";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "A fost găsită o nouă actualizare şi a fost descărcată automat";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Aplicaţia Caffeine nu poate face actualizarea automată şi este instalată într-o imagine numai în citire; pentru a o menţine la zi, copiaţi-o în /Aplicaţii";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Nu s-a reuşit mutarea în folderul Aplicaţii";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Fără deplasare";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Dacă doriţi, mă pot deplasa la folderul Aplicaţii.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Deplasare la folderul Aplicaţii";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Vă deplasaţi la folderul Aplicaţii în folderul Acasă?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Vă deplasaţi la folderul Aplicaţii?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Reţineţi că această acţiune necesită parola de administrator.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "În acest fel, folderul Descărcări va rămâne ordonat.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine încearcă deja să descarce o actualizare";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine este deja rutina implicită de tratare a linkurilor YMSGR";
+
+/* About menu item */
+"about" = "Despre";
+

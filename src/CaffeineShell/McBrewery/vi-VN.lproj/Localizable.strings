@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Không có quyền truy cập đến chuỗi phím, việc lưu lại thông tin đăng nhập của bạn là điều không thể";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Có lỗi (%d) truy cập chuỗi phím người dùng của bạn - nếu lỗi này còn xuất hiện, hãy liên hệ với nhóm Hỗ trợ của Caffeine";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Bạn đang chạy phiên bản Caffeine rất cũ và nên cập nhật phiên bản mới";
+
+/* why we ask for location access */
+"locpurpose" = "Caffeine có thể tùy ý chia sẻ vị trí của bạn với bạn bè của bạn";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Đã xảy ra lỗi không mong muốn. Vui lòng khởi động lại Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Lưu";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Cám ơn bạn đã gửi chuẩn đoán";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Trả lời";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Yêu cầu gửi nhật ký thủ công - bạn có thể tìm thấy tập tin zip tại ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Không gửi được nhật ký - Trước tiên, xóa hoặc đổi tên tập tin tại ~/Downloads/CaffeineLogs.zip và sau đó thử lại";
+
+/* Notification that you were disconnected */
+"disconnected" = "Bạn đã bị ngắt kết nối khỏi Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Thoát";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Thoát hoàn toàn";
+
+/* A new update is available to install  */
+"updateAvailable" = "Đã có sẵn bản cập nhật mới để cài đặt nhưng bạn phải thoát ứng dụng";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Lỗi không tải được URL";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Khoan đã";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Bản cập nhật mới đã có sẵn để cài đặt, bạn có muốn cài đặt ngay và khởi động lại không?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Bản cập nhật mới đã có sẵn để cài đặt, nhấn OK để cài đặt và khởi động lại.";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Đã phát hiện bản cập nhật mới và đã được tải xuống tự động";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine không thể tự động cập nhật vì ứng dụng được cài đặt trong hình ảnh chỉ đọc; Vui lòng sao chép nó sang /Ứng dụng để giữ cập nhật";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Không thể di chuyển đến thư mục Ứng dụng";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Không di chuyển";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Tôi có thể tự chuyển đến thư mục Ứng dụng nếu bạn muốn.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Chuyển đến Thư mục Ứng dụng";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Chuyển đến thư mục Ứng dụng trong thư mục Home của bạn?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Chuyển đến thư mục Ứng dụng?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Xin lưu ý, việc này cần phải có mật khẩu của quản trị viên.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Việc này sẽ giữ cho thư mục Tải xuống của bạn được gọn gàng.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine đang cố gắng tải xuống bản cập nhật";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine đã là trình xử lý cho các liên kết YMSGR";
+
+/* About menu item */
+"about" = "Giới thiệu";
+

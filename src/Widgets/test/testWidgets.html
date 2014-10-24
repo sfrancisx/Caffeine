@@ -1,0 +1,51 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<html>
+<head>
+	<title>Widget Test</title>
+
+	<link rel="stylesheet" href="/css/global.css" TYPE="text/css">
+	<link rel="stylesheet" href="/css/MenuDefaults.css" TYPE="text/css">
+	<script src="/src/Infrastructure/modules.js"></script>
+	<script src="/src/Infrastructure/bootstrap.js"></script>
+
+	<script src="testWidgets.js"></script>
+</head>
+<body>
+
+	<button data-menu-action="menu1">Automatic Menu 1</button>
+	<button data-menu-action="menu2">Automatic Menu 2</button>
+
+	<button data-show-menu="string">String Menu</button>
+	<button data-show-menu="html">HTML Menu</button>
+	<button data-show-menu="element">Element Menu</button>
+	<button data-show-menu="render">Render Menu</button>
+
+<script>
+	document.body.addEventListener("click", onMenu);
+</script>
+
+<div data-menu="menu1" class="menu" style="visibility: hidden">
+	<ul>
+		<li data-menu-id="menu 1 item1" tabindex=-1>menu 1 item1</li>
+		<li data-menu-id="menu 1 item2" tabindex=-1>menu 1 item2</li>
+		<li data-menu-id="menu 1 item3" tabindex=-1>menu 1 item3</li>
+        <li data-menu-id="menu 1 item4" tabindex=-1>menu 1 item4</li>
+	</ul>
+</div>
+
+<div data-menu="menu2" class="menu" style="visibility: hidden">
+	<ul>
+		<li data-menu-id="menu 2 item1" tabindex=-1>menu 2 item1</li>
+		<li data-menu-id="menu 2 item2" tabindex=-1>menu 2 item2</li>
+		<li data-menu-id="menu 2 item3" tabindex=-1>menu 2 item3</li>
+        <li data-menu-id="menu 2 item4" tabindex=-1>menu 2 item4</li>
+	</ul>
+</div>
+
+</body>
+</html>

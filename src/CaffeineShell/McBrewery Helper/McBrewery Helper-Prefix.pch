@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'McBrewery Helper' target in the 'McBrewery Helper' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

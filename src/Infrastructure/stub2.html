@@ -1,0 +1,42 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<head>
+    <title>Caffeine</title>
+    <script>
+		Caffeine.appMode = { slave: 1 };
+    </script>
+
+    <script src="src/Infrastructure/cef_interface.js"></script>
+    <script src="src/Infrastructure/modules.js"></script>
+    <script src="src/Infrastructure/bootstrap.js"></script>
+    <script>
+    		window.onload = function() {
+	    		if (navigator.platform == "MacIntel") {
+				if ( document.body )
+					document.body.classList.add("mac");
+			}
+			else {
+				if ( document.body )
+					document.body.classList.add("win");
+			}
+    		};
+        function startStub2()
+        {
+            var windowData = JSON.parse(myInitArg);
+
+            if (windowData.locale) {
+                Caffeine.appMode.locale = windowData.locale;
+            }
+
+            document.title = windowData.title || windowData.module;
+
+            Caffeine.Bootstrap.loadSources(windowData, function () {});
+        };
+    </script>
+</head>
+<body>
+</body>

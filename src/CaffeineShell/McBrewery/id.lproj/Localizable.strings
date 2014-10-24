@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Tanpa akses ke keychain Anda, tidak mungkin menyimpan informasi akses sign in";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Ada kesalahan dalam (%d) mengakses keychain pengguna Anda - jika masih terjadi, hubungi Dukungan Caffeine!";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Anda menjalankan versi Caffeine yang sudah sangat lama dan Anda sebaiknya mengupgradenya";
+
+/* why we ask for location access */
+"locpurpose" = "Secara opsional, Caffeine dapat membagi lokasi Anda dengan teman";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Terjadi kesalahan yang tidak terduga. Restart Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Simpan";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Terima kasih telah mengirimkan diagnostik";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Balas";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Memerlukan pengiriman log secara manual - Anda dapat menemukan file zip di ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Pengiriman log gagal - Hapus atau ganti nama file terlebih dahulu di ~/Downloads/CaffeineLogs.zip lalu coba lagi";
+
+/* Notification that you were disconnected */
+"disconnected" = "Anda terputus sambungan dari Caffeine Instan";
+
+/* Sign out menu item */
+"disconnect" = "Sign Out";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Sign Out Semua Tempat";
+
+/* A new update is available to install  */
+"updateAvailable" = "Update baru tersedia untuk diinstal, namun Anda harus keluar dari aplikasi";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Gagal memuat URL dengan kesalahan";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Tunggu";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Update baru sudah tersedia untuk diinstal, ingin menginstalnya sekarang dan merestart?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Update baru sudah tersedia untuk diinstal, tekan OK untuk menginstal dan merestart";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Update baru telah ditemukan dan akan secara otomatis didownload";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine tidak dapat mengupdate secara otomatis karena terinstal dalam citra hanya-baca; Silakan salin ke/aplikasi untuk agara aplikasi tetap terbaru";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Tidak bisa memindahkan folder Aplikasi";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Jangan Pindahkan";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Saya dapat memindahkan sendiri ke folder Aplikasi jika Anda inginkan.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Pindahkan ke Folder Aplikasi";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Pindahkan ke folder Aplikasi di folder Awal Anda?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Pindahkan ke folder Aplikasi?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Catat bahwa hal ini memerlukan kata sandi administrator.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Ini akan membuat folder Download Anda tetap rapi.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Instan sedang mencoba mendownload update";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine sudah menjadi pengelola default untuk tautan YMSGR";
+
+/* About menu item */
+"about" = "Tentang";
+

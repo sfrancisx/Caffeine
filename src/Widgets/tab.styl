@@ -1,0 +1,205 @@
+/*
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+ */
+
+.ym-tab-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 72px;
+	background: linear-gradient(#525660, #35393f);
+	-webkit-user-select: none;
+
+    button {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 0 none;
+    }
+
+	header {
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		button {
+			-webkit-mask: url("../src/Assets/images/icn-pencil.svg") no-repeat 50% 50%;
+			-webkit-mask-size: 30px;
+			background-color: #ffffff;
+			height: 32px;
+		}
+	}
+    
+    .ym-tabs {
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100px;
+    }
+
+	header ~ .ym-tabs {
+		top: 32px;
+	}
+    
+    .tab-item {
+        overflow: hidden;
+        position: relative;
+        margin-top: 10px;
+        padding: 0 3px;
+        width: 66px;
+        height: 70px;
+        cursor: default;
+        
+        &.selected {
+			background: rgba(0,0,0,.4);
+            
+            .tab-name {
+                opacity: 1;
+            }
+        }
+        
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &:hover {
+            .tab-close {
+                opacity: 1;
+            }
+        }
+    }
+
+    .msg-count,
+    .tab-close {
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        width: 20px;
+        height: 20px;
+    }
+	
+    .tab-close {
+        opacity: 0;
+        background-color: #fff;
+        transition: opacity .1s;
+        z-index: 3;
+    }
+
+	.msg-count {
+		left: auto;
+		right: 9px;
+		z-index: 2;
+	}
+    
+    .avatar {
+        top: 9px;
+        margin: 0 auto;
+    }
+    
+	.msg-request .msg-count {
+        display: none;
+    }
+    
+    .tab-name {
+        overflow: hidden;
+        position: relative;
+        top: 13px;
+		color: #fff;
+        white-space: nowrap;
+		text-shadow: 0 1px 0 rgba(0,0,0,.75);
+        text-align: center;
+		text-overflow: ellipsis;
+
+		> span {
+			display:inline-block
+			box-sizing:  border-box;
+			max-width: 100%;
+			position: relative;
+			text-align: left;
+
+			.name {
+				display: inline-block;
+				max-width: 100%;
+				text-overflow: ellipsis;
+				padding-right: 25px;
+				overflow: hidden;
+				box-sizing: border-box;
+			}
+				
+			.count {
+				position: absolute;
+				left: 0;
+			}
+
+			.count:last-child {
+				right: 3px;
+				left: auto;
+			}
+
+			.count + .name {
+				padding-right: 0;
+				padding-left: 25px;
+			}
+		}
+
+    }
+    
+    .tab-overflow {
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: 20px;
+        opacity: 0;
+        text-indent: -9999px;
+        z-index: 1;
+        transition: opacity .15s;
+        
+        &.tab-overflow-up {
+            top: 0px;
+            background: rgba(55,61,71,.8) url("../src/Assets/images/icn-tab-overflow-up.png") no-repeat 50% 50%;
+        }
+        
+        &.tab-overflow-down {
+            bottom: 0;
+            background: rgba(55,61,71,.8) url("../src/Assets/images/icn-tab-overflow-down.png") no-repeat 50% 50%;
+        }
+        
+        &.show {
+            opacity: 1;
+        }
+
+		&.redflag {
+			background-image: url("../src/Assets/images/icn-tab-overflow-down-red.png");
+		}
+
+		&.tab-overflow-up.redflag {
+			-webkit-transform: rotate(180deg);
+		}
+    }
+
+	header ~ .tab-overflow.tab-overflow-up {
+		top: 32px;
+	}
+    
+    .tab-new-conv {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        background: rgba(0,0,0,.5) url("../src/Assets/images/icn-tab-new.png") no-repeat 50% 50%;
+        text-indent: -9999px;
+    }
+}

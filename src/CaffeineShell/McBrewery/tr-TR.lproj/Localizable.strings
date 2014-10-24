@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Anahtar zincirinize erişim olmaksızın, oturum açma bilgileriniz kaydedilemez.";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Anahtar zincirinize erişirken bir hata oldu (%d) - bu sürerse, Caffeine Destek ile iletişim kurun";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Caffeine'ın çok eski bir sürümünü kullanıyorsunuz ve yükseltmeniz gereklidir";
+
+/* why we ask for location access */
+"locpurpose" = "İsteğe bağlı olarak, Caffeine konumunuzu arkadaşlarınızla paylaşabilir";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Beklenmeyen bir hata oldu. Lütfen Caffeine'ı tekrar başlatın";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Kaydet";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Tanılamayı işleme koyduğunuz için teşekkür ederiz";
+
+/* OK - to use in alert dialog  */
+"OK" = "Tamam";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Yanıtla";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Manuel kayıt işleme koyulmasını gerektir - zip'i şuradan bulabilirsiniz ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Kayıtların işleme koyulması başarısız oldu - Önce ~/Downloads/CaffeineLogs.zip konumundaki dosyayı kaldırın veya tekrar adlandırın ve tekrar deneyin.";
+
+/* Notification that you were disconnected */
+"disconnected" = "Caffeine bağlantınız kesildi";
+
+/* Sign out menu item */
+"disconnect" = "Çıkış";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Her Yerden Çık";
+
+/* A new update is available to install  */
+"updateAvailable" = "Kurulması için yeni bir güncelleme mevcut, ancak uygulamadan çıkmanız gerekir";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "URL hata ile yüklenemedi";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Bekleyin";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Yüklemek için yeni bir güncelleme mevcut, şimdi yüklemek ve yeniden başlatmak istiyor musunuz?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Yüklemek için yeni bir güncelleme mevcut, yüklemek ve yeniden başlatmak için Tamam'a basın";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Yeni bir güncelleme bulundu ve otomatik olarak indirildi";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Salt okunur görüntü içinde kurulduğundan, Caffeine otomatik güncelleme yapamaz; güncel tutmak için bunu lütfen /Uygulamalar'a kopyalayın";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Uygulamalar klasörüne taşınamadı";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Taşımayın";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "İsterseniz Uygulamalar klasörüne kendim taşıyabilirim.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Uygulamalar Klasörüne Taşı";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Anasayfa Klasörünüzdeki Uygulamalar klasörüne taşınsın mı?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Uygulamalar klasörüne taşınsın mı?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Bunun yönetici parolası gerektireceğini unutmayın.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Bu, İndirilenler klasörünüzü düzenli şekilde tutacaktır.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine zaten bir güncelleme indirmeye çalışıyor";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine zaten YMSNGR bağlantılaı için varsayılan işleyici";
+
+/* About menu item */
+"about" = "Hakkında";
+

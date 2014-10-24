@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "未存取您的金鑰鏈，就無法儲存您的登入認證";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "存取金鑰鏈時發生錯誤 (%d) - 如果問題持續發生，請連絡 Caffeine奇摩支援";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "您正在執行版本非常舊的 Caffeine 即時通+，應該更新一下了";
+
+/* why we ask for location access */
+"locpurpose" = "您可以選擇在 Caffeine 即時通+ 與好友分享您的位置";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "發生未預期的錯誤。 請重新啟動 Caffeine 即時通+";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "儲存";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "感謝您送出診斷結果";
+
+/* OK - to use in alert dialog  */
+"OK" = "確定";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine 即時通+";
+
+/* Reply - to use in user notifications  */
+"Reply" = "回覆";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "需要手動記錄送出 - 您可以在下列位置找到 zip 檔案： ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "送出記錄失敗 - 先移除或重新命名 ~/Downloads/CaffeineLogs.zip 中的檔案，然後再試一次";
+
+/* Notification that you were disconnected */
+"disconnected" = "已將您從 Caffeine 即時通+ 中斷連線";
+
+/* Sign out menu item */
+"disconnect" = "登出";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "從所有位置登出";
+
+/* A new update is available to install  */
+"updateAvailable" = "可安裝新的更新，但您必須結束應用程式";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "無法載入 URL，發生錯誤";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "等等";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "有可安裝的新更新，要立即安裝並重新啟動嗎？";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "有可安裝的新更新，請按下「確定」以安裝並重新啟動";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "已發現並自動下載新更新";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "由於您將 Caffeine 安裝於唯讀映像，因此其無法自動更新；請將其複製到 /Applications，讓其保持在最新狀態";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "無法移至應用程式資料夾";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "不要移動";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "如果您喜歡的話，我可以自己移至應用程式資料夾。";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "移至應用程式資料夾";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "要移至個人專屬資料夾中的應用程式資料夾嗎？";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "要移至應用程式資料夾嗎？";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "請注意，此動作需要管理員密碼。";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "這可讓您的下載項目資料夾保持整齊。";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "即時通+ 已嘗試下載更新";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "即時通+ 已是 YMSGR 連結的預設處理常式";
+
+/* About menu item */
+"about" = "關於";
+

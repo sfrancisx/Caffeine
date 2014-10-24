@@ -1,0 +1,83 @@
+/*
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+ */
+
+#_modalWindow {
+    border: none;
+}
+
+.menu {
+	position: relative;
+	top: 7px;
+	padding: 5px 0;
+	max-width: 300px;
+	color: #fff !important;
+	font-size: 13px;
+	border: 1px solid rgba(255,255,255,.2);
+	box-shadow: 2px 3px 8px 0px rgba(0,0,0,.3);
+	border-radius: 3px;
+	background: rgba(0,0,0,.85);
+	-webkit-user-select: none;
+	cursor: default;
+	z-index: 10;
+	
+	.menu-header {
+	    position: relative;
+	    padding: 10px 15px;
+	    min-height: 40px;
+	}
+	
+	.msg-name {
+	    position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 15px 15px 0 65px;
+        font-size: 15px;
+        height: 100%;
+        box-sizing: border-box;
+	}
+	
+	.custom {    
+	    display: block;
+        line-height: 18px;
+        font-size: 11px;
+        text-align: left;
+	}
+
+    li	{
+        overflow: hidden;
+        position: relative;
+        padding: 3px 15px;
+        cursor: default;
+
+		&:hover	{
+            background-color: rgba(255,255,255,.15);
+        }
+    }
+    
+    .toggles {
+        li {        
+            &.selected:before {
+                content: "";
+		        position: absolute;
+		        top: 6px;
+		        left: 4px;
+		        height: 9px;
+		        width: 10px;
+                -webkit-mask: url("../src/Assets/images/icn-confirm.svg") 50% 50% no-repeat;
+                -webkit-mask-size: 9px;
+                background-color: #fff;
+            }
+        }
+    }
+    
+	hr {
+	    margin: 5px 15px;
+		height: 0;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.15);
+	}
+}

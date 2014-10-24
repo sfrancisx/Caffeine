@@ -1,0 +1,45 @@
+/*
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+ */
+
+.globalAlert {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.85);
+	z-index: 3;
+	opacity: 0;
+	color: #000;
+	-webkit-animation-name: popinout;
+	-webkit-animation-duration: 4s;
+
+	&.error {
+		color: #f00;
+	}
+}
+
+@css {
+@-webkit-keyframes popinout{
+	from {
+		opacity: 0;
+	} 
+
+	12.5% {
+		opacity: 1;
+	}
+
+	77.5% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+}

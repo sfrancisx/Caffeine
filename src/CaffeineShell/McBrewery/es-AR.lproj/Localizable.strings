@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Si no tienes acceso a tu llavero, no será posible guardar tus credenciales de inicio de sesión";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Hubo un error %d al entrar a tu llavero de usuario - si esto persiste, comunícate con Soporte de Caffeine.";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Tu versión de Caffeine Caffeine es demasiado antigüa y deberías actualizarla.";
+
+/* why we ask for location access */
+"locpurpose" = "De manera opcional, Caffeine Caffeine puede compartir tu ubicación con tus amigos.";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Se produjo un error inesperado. Por favor, reiniciá Caffeine Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Guardar";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Gracias por enviar los diagnósticos.";
+
+/* OK - to use in alert dialog  */
+"OK" = "Aceptar";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Responder";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Solicitar envío de registro manual, puedes buscar el zip en ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "No se pudieron enviar los registro, Primero quita o renombra el archivo ubicado en ~/Downloads/CaffeineLogs.zip e intenta nuevamente";
+
+/* Notification that you were disconnected */
+"disconnected" = "Serás desconectado de Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Salir";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Salir: en cualquier sitio";
+
+/* A new update is available to install  */
+"updateAvailable" = "Hay una actualización disponible para instalar pero tienes que cerrar la aplicación.";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "No se pudo cargar la URL con error";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Espera";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Hay una nueva actualización lista para instalar ¿Quieres instalarla y reiniciar ahora?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Hay una nueva actualización lista para instalar, haz clic en OK para instalar y reiniciar";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Se encontró una actualización nueva y se descargó automáticamente";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine no puede actualizarse automáticamente ya que se instala como una imagen de solo lectura. Por favor, cópialo a /Aplicaciones para mantenerlo actualizado.";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "No se puede mover a la carpeta de Aplicaciones";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "No mover";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Me puedo mover a la carpeta Aplicaciones si preferís.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Mover a la carpeta Aplicaciones";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "¿Mover a la carpeta Aplicaciones en la carpeta Inicio?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "¿Mover a la carpeta Aplicaciones?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Se necesitará una contraseña de administrador.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Tu carpeta Descargas se mantendrá ordenada.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeinees ya está intentando descargar una actualización";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeinees ya es el controlador predeterminado de los enlaces de Caffeine Caffeine";
+
+/* About menu item */
+"about" = "Acerca de";
+

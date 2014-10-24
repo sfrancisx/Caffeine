@@ -1,0 +1,101 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Without access to your keychain, it won't be possible to save your login credentials";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "There was an error (%d) accessing your user keychain - if this persists, contact Caffeine Support";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "You are running a very old version of Caffeine and you should upgrade it";
+
+/* why we ask for location access */
+"locpurpose" = "Optionally, Caffeine can share your location witn your friends";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "There was an unexpected error. Please restart Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Save";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Thank you for submitting diagnostics";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Reply";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Require manual log submission - you can find the zip at ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Submit logs failed - First remove or rename file at ~/Downloads/CaffeineLogs.zip and then try again";
+
+/* Notification that you were disconnected */
+"disconnected" = "You were disconnected from Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Sign Out";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Sign Out Everywhere";
+
+/* A new update is available to install  */
+"updateAvailable" = "A new update is available to be installed, but you have to quit the application";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Failed to load URL with error";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Wait";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "A new update is available to be installed, want to install it now and restart?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "A new update is available to be installed, press OK to install and restart";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "A new update was found and it's been automatically downloaded";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine can't auto-update as it's installed in a read-only image; Please copy it to /Applications to keep it current";
+
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Could not move to Applications folder";
+
+/* No comment provided by engineer. */
+"Do Not Move" = "Do Not Move";
+
+/* No comment provided by engineer. */
+"I can move myself to the Applications folder if you'd like." = "I can move myself to the Applications folder if you'd like.";
+
+/* No comment provided by engineer. */
+"Move to Applications Folder" = "Move to Applications Folder";
+
+/* No comment provided by engineer. */
+"Move to Applications folder in your Home folder?" = "Move to Applications folder in your Home folder?";
+
+/* No comment provided by engineer. */
+"Move to Applications folder?" = "Move to Applications folder?";
+
+/* No comment provided by engineer. */
+"Note that this will require an administrator password." = "Note that this will require an administrator password.";
+
+/* No comment provided by engineer. */
+"This will keep your Downloads folder uncluttered." = "This will keep your Downloads folder uncluttered.";
+
+

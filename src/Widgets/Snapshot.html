@@ -1,0 +1,34 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<div class="snapshot">
+  <video autoplay="autoplay" class="glass-overlay"></video>
+  
+  <div class="guide">
+      {+guidehelp}
+      {/guidehelp}
+  </div>
+
+  <button class="icon icn-shutter" title="{+buttontitle}{str_webcam_capture_title}{/buttontitle}"></button>
+
+  <span class="filterhack"></span>
+  <ul class="menu hidden">
+    <li data-filter="blur">{str_image_filter_blur}</li>
+    <li data-filter="brightness">{str_image_filter_brightness}</li>
+    <li data-filter="contrast">{str_image_filter_contrast}</li>
+    <li data-filter="grayscale">{str_image_filter_grayscale}</li>
+    <li data-filter="invert">{str_image_filter_invert}</li>
+    <!--<li data-filter="hue-rotate">Hue-90</li>
+    <li data-filter="hue-rotate2">Hue-180</li>
+    <li data-filter="hue-rotate3">Hue-270</li>
+    <li data-filter="opacity">Opaque</li>-->
+    <li data-filter="saturate">{str_image_filter_saturate}</li>
+    <li data-filter="sepia">{str_image_filter_sepia}</li>
+    <li data-filter="sharpen">{str_image_filter_sharpen}</li>
+  </ul>
+
+</div>
+

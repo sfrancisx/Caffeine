@@ -1,0 +1,33 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<div class="dialog modal" role="dialog" {?title}aria-labelledby="dialog_title_{count}"{/title} tabindex="-1">
+  <div>
+    <section>
+      {#title}
+        <h3 id="dialog_title_{count}">{.|i}</h3>
+      {/title}
+
+      {?html}
+        {html|s}
+      {:else}
+        {?data}
+          {>"{template}" data=data /}
+        {/data}
+      {/html}
+
+      {?buttons}
+        <p class="buttons">
+          {#buttons}
+            <button data-name="{name}" class="btn {?secondary}secondary{/secondary}">{label|i}</button>
+          {/buttons}
+        </p>
+      {/buttons}
+      
+      <button class="dialog-close icon icn-decline" aria-label="{str_close}"></button>
+    </section>
+  </div>
+</div>

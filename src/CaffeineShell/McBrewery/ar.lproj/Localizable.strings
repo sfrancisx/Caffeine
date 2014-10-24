@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "دون الوصول إلى السلسلة الأساسية الخاصة بك، لن يكون من الممكن حفظ بيانات الاعتماد الخاصة بك";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "حدث خطأ (%d) أثناء الوصول إلى سلسلة المستخدم الأساسية - في حالة استمرار ظهور الخطأ، اتصل بدعم Caffeine";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "تستخدم إصدار قديم جدًا من Caffeine ويجب ترقيته";
+
+/* why we ask for location access */
+"locpurpose" = "اختياريًا، يمكن لتطبيق Caffeine مشاركة موقعك مع أصدقائك";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "حدث خطأ غير متوقع. الرجاء إعادة تشغيل Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "حفظ";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "شكرًا على إرسال التشخيصات";
+
+/* OK - to use in alert dialog  */
+"OK" = "موافق";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "رد";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "يجب إرسال السجل يدويًا - يمكن العثور على الملف المضغوط على ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "فشل إرسال السجلات - يجب أولاً إزالة الملف الموجود على ~/Downloads/CaffeineLogs.zip أو إعادة تسميته والمحاولة مرة أخرى";
+
+/* Notification that you were disconnected */
+"disconnected" = "تم قطع الاتصال عن Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "تسجيل الخروج";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "تسجيل الخروج من أي مكان";
+
+/* A new update is available to install  */
+"updateAvailable" = "يتوفر تحديث جديد يجب تثبيته، ولكن يجب عليك الخروج من التطبيق.";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "فشل تحميل عنوان URL مع وجود خطأ";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "انتظر";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "يتوفر تحديث جديد للتثبيت، هل ترغب في تثبيته الآن وإعادة التشغيل؟";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "يتوفر تحديث جديد للتثبيت، اضغط على \"موافق\" لتثبيته وإعادة التشغيل";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "تم العثور على تحديث جديد وتم تنزيله تلقائيًا";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "يتعذر على Caffeine إجراء تحديث تلقائي نظرًا لتثبيته بصورة للقراءة فقط؛ يرجى نسخه إلى /Applications للحفاظ عليه يعمل";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "تعذر النقل إلى المجلد Applications";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "عدم النقل";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "يمكنني نقل نفسي إلى المجلد Applications إذا كنت ترغب في ذلك.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "نقل إلى المجلد Applications";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "هل ترغب في النقل إلى المجلد Applications في المجلد Home؟";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "نقل إلى المجلد Applications؟";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "لاحظ أن هذا سيتطلب كلمة سر مسؤول.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "سيحافظ هذا على المجلد Downloads مرتبًا.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "يحاول Caffeine بالفعل تنزيل تحديث";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "يعتبر Caffeine بالفعل المعالج الافتراضي لارتباطات YMSGR";
+
+/* About menu item */
+"about" = "حول";
+

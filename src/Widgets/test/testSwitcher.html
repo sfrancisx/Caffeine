@@ -1,0 +1,101 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<html>
+<head>
+    <title>Standalone Docked Tab Control</title>
+
+	<link rel="stylesheet" href="/css/global.css" TYPE="text/css">
+
+	<script src="/src/Infrastructure/modules.js"></script>
+	<script src="/src/Infrastructure/bootstrap.js"></script>
+
+	<script>
+
+	(function() {
+
+	var session;
+	
+	Caffeine.appMode.real = 1;
+	Caffeine.appMode.mock = 0;
+	Caffeine.appMode.browser = 1;
+	Caffeine.appMode.CEF = 0;
+	Caffeine.appMode.locale = "en-US";
+	
+	var mcs,
+		convCount = 0;
+
+	Caffeine.Bootstrap.loadSources([ { module: 'Widgets' }, { module: "Templates" }, { module: 'Dev' } ], loadComplete);
+	
+	function loadComplete(error, result)
+	{
+		var ctrl,
+			showing = 0;
+		
+		Caffeine.Desktop.popupWindow(
+			{
+				target: 'dock',
+				width:	100,
+				height: 300,
+				module: 'Widgets',
+				initFn:	'TileCtrl',
+				moduleParms:
+				{
+					width:	80,
+					height:	84
+				}
+			},
+			function(err, ctrl)
+			{
+				ctrl.add(
+					{
+						module:		"Templates",
+						data:		{ value: 0 },
+						template:	"SimpleTemplate"
+					});
+
+				ctrl.add(
+					{
+						module:		"Templates",
+						data:		{ value: 1 },
+						template:	"SimpleTemplate"
+					});
+			});
+
+		Caffeine.Ctrls.TileCtrl(
+			{
+				parent: document.getElementById('div1'),
+				width:	80,
+				height:	84
+			},
+			function(error, res)
+			{
+				ctrl = res;
+				
+				ctrl.add({ data: { value: 0 }, template: "SimpleTemplate" });
+				ctrl.add({ data: { value: 1 }, template: "SimpleTemplate" });
+			});
+		
+		Caffeine.OverlayCtrl(
+			{ parent: document.getElementById('div2') },
+			function(error, res)
+			{
+				ctrl = res;
+				
+				ctrl.add(Caffeine.JsonUI.init, { value: 0 });
+				ctrl.add(Caffeine.JsonUI.init, { value: 1 });
+			});
+	}
+
+	})();
+
+	</script>
+</head>
+<body>
+<div id="div1" style="overflow:hidden;position:absolute;left:0;top:0;width:80px;bottom:0"></div>
+<div id="div2" style="white-space:pre;overflow:auto;position:absolute;left:80px;top:0;right:0;bottom:0"></div>
+</body>
+</html>

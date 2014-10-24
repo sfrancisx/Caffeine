@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "ถ้าไม่สามารถเข้าถึงชื่อผู้ใช้และรหัสผ่านของคุณ เราจะไม่สามารถบันทึกข้อมูลสำหรับการเข้าระบบของคุณได้";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "เกิดข้อผิดพลาด (%d) ในการเข้าถึงชื่อผู้ใช้และรหัสผ่านของคุณ ถ้าปัญหานี้เกิดขึ้นอีก โปรดติดต่อฝ่ายบริการของ Caffeine";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "คุณกำลังใช้เวอร์ชั่น Caffeine ที่เก่ามาก และต้องอัพเกรด";
+
+/* why we ask for location access */
+"locpurpose" = "คุณสามารถเลือกให้ Caffeine แชร์ตำแหน่งของคุณกับเพื่อนๆ ก็ได้";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "เกิดข้อผิดพลาดที่ไม่คาดหมาย โปรดเริ่มต้น Caffeine ใหม่";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "บันทึก";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "ขอบคุณที่ส่งการวิเคราะห์";
+
+/* OK - to use in alert dialog  */
+"OK" = "ตกลง";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "ตอบ";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "ต้องส่งบันทึกด้วยตัวเอง คุณจะพบไฟล์ Zip ได้ที่ ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "ส่งบันทึกไม่สำเร็จ ให้ลบหรือเปลี่ยนชื่อไฟล์ที่ ~/Downloads/CaffeineLogs.zip ก่อน แล้วจึงลองอีกครั้ง";
+
+/* Notification that you were disconnected */
+"disconnected" = "คุณตัดการเชื่อมต่อกับ Caffeine แล้ว";
+
+/* Sign out menu item */
+"disconnect" = "ลงชื่อออก";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "ลงชื่อออกจากทุกที่";
+
+/* A new update is available to install  */
+"updateAvailable" = "มีโปรแกรมอัพเดทใหม่ให้ติดตั้ง แต่คุณต้องออกจากแอพพลิเคชั่นนี้";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "โหลด URL ไม่สำเร็จโดยมีข้อผิดพลาด";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "โปรดรอสักครู่";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "มีโปรแกรมอัพเดทใหม่พร้อมสำหรับการติดตั้ง ต้องการติดตั้งตอนนี้และรีสตาร์ทหรือไม่";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "มีโปรแกรมอัพเดทใหม่พร้อมสำหรับการติดตั้ง กด ตกลง เพื่อติดตั้งและรีสตาร์ท";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "พบโปรแกรมอัพเดทใหม่ และดาวน์โหลดโดยอัตโนมัติแล้ว";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine ไม่สามารถทำการอัปเดตแบบอัตโนมัติ เนื่องจากมีการติดตั้งไว้เป็นแบบสำหรับอ่านเท่านั้น กรุณาคัดลอกไปยังแอปพลิเคชัน และทำการอัปเดต";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "ไม่สามารถย้ายไปยังโฟลเดอร์แอปพลิเคชัน";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "ไม่ต้องทำการย้าย";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "ฉันสามารถย้ายไปยังโฟลเดอร์แอปพลิเคชันเอง หากคุณต้องการ";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "ย้ายไปยังโฟลเดอร์แอปพลิเคชัน";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "ย้ายไปยังโฟลเดอร์แอปพลิเคชันในโฟลเดอร์หลักของคุณหรือไม่?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "ย้ายไปยังโฟลเดอร์แอปพลิเคชัน?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "หมายเหตุ การดำเนินการนี้ต้องใช้รหัสผ่านผู้ดูแลระบบ";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "ซึ่งจะช่วยให้โฟลเดอร์ดาวน์โหลดของคุณไม่ยุ่งเหยิง";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine กำลังพยายามดาวน์โหลดอัพเดตอยู่แล้ว";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine เป็นตัวจัดการลิงก์ YMSGR เริ่มต้นอยู่แล้ว";
+
+/* About menu item */
+"about" = "เกี่ยวกับ";
+

@@ -1,0 +1,37 @@
+<!--
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+-->
+
+<head>
+    <title>Caffeine</title>
+    <script>
+        window.windowId = "main";
+        window.IPC_id = "main";
+    </script>
+
+    <script src="src/Infrastructure/cef_interface.js"></script>
+    <script src="src/Infrastructure/modules.js"></script>
+    <script src="src/Infrastructure/bootstrap.js"></script>
+</head>
+<body>
+    <script>
+		(function() {
+			var parms = { module: 'MainWindow' };
+			if (navigator.platform == "MacIntel") {
+			    if ( document.body )
+					document.body.classList.add("mac");
+			}
+			else {
+			    if ( document.body )
+					document.body.classList.add("win");
+			}
+			Caffeine.Bootstrap.loadSources(parms,
+				function () {
+					Caffeine.Init(parms);
+				}
+			);
+		})();
+    </script>
+</body>

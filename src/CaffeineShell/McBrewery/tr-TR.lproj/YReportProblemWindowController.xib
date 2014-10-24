@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14A379a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="YReportProblemWindowController">
+            <connections>
+                <outlet property="crashWarning" destination="9xs-M3-nP4" id="M0P-kL-X8D"/>
+                <outlet property="messageText" destination="TRN-06-V2S" id="mWK-tp-3fm"/>
+                <outlet property="sendScreenshot" destination="P6j-zG-sCy" id="piz-dG-wGo"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Sorunu Caffeine'ya bildir" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="407" y="179" width="600" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="600" height="500"/>
+            <value key="maxSize" type="size" width="600" height="500"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" id="atI-ru-QPa">
+                        <rect key="frame" x="446" y="25" width="140" height="32"/>
+                        <buttonCell key="cell" type="push" title="Gönder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="47B-M6-QqL">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="sendMailList:" target="-2" id="P2z-U2-eBD"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="0VY-xb-lX5">
+                        <rect key="frame" x="195" y="25" width="140" height="32"/>
+                        <buttonCell key="cell" type="push" title="İptal" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qIC-Bo-PAH">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="zz7-YY-kZF"/>
+                        </connections>
+                    </button>
+                    <button id="P6j-zG-sCy">
+                        <rect key="frame" x="18" y="166" width="569" height="18"/>
+                        <buttonCell key="cell" type="check" title="Ana ekranınızın düşük çözünürlüklü bir ekran görüntüsünü ekleyin" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bI1-iy-1BO">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="A6w-T7-TAo">
+                        <rect key="frame" x="26" y="73" width="561" height="80"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="X7F-CP-lc5">
+                            <font key="font" metaFont="smallSystem"/>
+                            <string key="title">"Gönder"e tıklamak, Caffeine kayıtlarınızdaki tanılama bilgilerinin yanı sıra bu bilgiyi Caffeine'ya iletecektir.  Bu kayıtlar kişisel olarak tanımlanabilir bilgileri içerebilir. Caffeine! bu bilgiyi yalnızca sorunları tanılamak ve çözümlemek ve genel ürün iyileştirmeleri için kullanır.</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="KFA-4b-XWf">
+                        <rect key="frame" x="20" y="196" width="565" height="267"/>
+                        <clipView key="contentView" id="TBO-hP-u1k">
+                            <rect key="frame" x="1" y="1" width="563" height="265"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="TRN-06-V2S">
+                                    <rect key="frame" x="0.0" y="0.0" width="563" height="265"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="563" height="265"/>
+                                    <size key="maxSize" width="566" height="10000000"/>
+                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="563" height="265"/>
+                                    <size key="maxSize" width="566" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="vu2-nF-eIk">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="tbB-mr-DVN">
+                            <rect key="frame" x="548" y="1" width="16" height="265"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="9xs-M3-nP4">
+                        <rect key="frame" x="18" y="478" width="564" height="13"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Bir çökme saptandı - bundan önceki işleminizin ne olduğunu açıklayabilir misiniz?" id="W51-hB-cow">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+    </objects>
+</document>

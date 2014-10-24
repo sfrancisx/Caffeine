@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Χωρίς πρόσβαση στην κλειδοθήκη σας, δεν θα είναι δυνατή η αποθήκευση των στοιχείων εισόδου σας";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Παρουσιάστηκε σφάλμα (%d) κατά την πρόσβαση στην κλειδοθήκη χρήστη - αν το πρόβλημα συνεχιστεί, επικοινωνήστε με την Υποστήριξη Caffeine";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Η έκδοση του Caffeine που εκτελείτε είναι πολύ παλιά και χρειάζεται ενημέρωση";
+
+/* why we ask for location access */
+"locpurpose" = "Προαιρετικά, το Caffeine μπορεί να κοινοποιεί την τοποθεσία σας στους φίλους σας";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Παρουσιάστηκε ένα μη αναμενόμενο σφάλμα. Επανεκκινήστε το Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Αποθήκευση";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Ευχαριστούμε που υποβάλατε τα διαγνωστικά";
+
+/* OK - to use in alert dialog  */
+"OK" = "ΟΚ";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Απάντηση";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Απαιτείται μη αυτόματη υποβολή αρχείων καταγραφής - το αρχείο zip βρίσκεται στο ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Αποτυχία υποβολής αρχείων καταγραφής - Αρχικά καταργήστε ή μετονομάστε το αρχείο στο ~/Downloads/CaffeineLogs.zip και, στη συνέχεια, προσπαθήστε ξανά";
+
+/* Notification that you were disconnected */
+"disconnected" = "Αποσυνδεθήκατε από το Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Έξοδος";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Αποσύνδεση από παντού";
+
+/* A new update is available to install  */
+"updateAvailable" = "Μια νέα ενημέρωση είναι διαθέσιμη για εγκατάσταση, αλλά πρέπει να κλείσετε την εφαρμογή.";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Αποτυχία φόρτωσης URL με σφάλμα";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Αναμονή";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Μια νέα ενημέρωση είναι διαθέσιμη για εγκατάσταση, θέλετε να την εγκαταστήσετε τώρα και να κάνετε επανεκκίνηση;";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Μια νέα ενημέρωση είναι διαθέσιμη για εγκατάσταση, πατήστε OK για να κάνετε εγκατάσταση και επανεκκίνηση";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Βρέθηκε μια νέα ενημέρωση και πραγματοποιήθηκε αυτόματη λήψη";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Η εφαρμογή Caffeine δεν μπορεί να ενημερωθεί αυτόματα αφού έχει εγκατασταθεί ως είδωλο μόνο για ανάγνωση. Αντιγράψτε τη στη θέση /Εφαρμογές για να τη διατηρείτε ενημερωμένη.";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Δεν ήταν δυνατή η μετακίνηση στο φάκελο \"Εφαρμογές\"";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Να μην γίνει μετακίνηση";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Αν θέλετε μπορώ να μετακινηθώ στο φάκελο \"Εφαρμογές\".";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Μετακίνηση στο φάκελο \"Εφαρμογές\"";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Μετακίνηση στο φάκελο \"Εφαρμογές\" μέσα στον κεντρικό φάκελο;";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Μετακίνηση στο φάκελο \"Εφαρμογές\";";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Λάβετε υπόψη ότι θα σας ζητηθεί κωδικός πρόσβασης διαχειριστή.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Έτσι θα διατηρήσετε το φάκελο \"Λήψεις\" τακτοποιημένο.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Γίνεται ήδη προσπάθεια λήψης ενημέρωσης από το Caffeine";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Το Caffeine αποτελεί ήδη το προεπιλεγμένο πρόγραμμα χειρισμού για συνδέσεις YMSGR";
+
+/* About menu item */
+"about" = "Σχετικά";
+

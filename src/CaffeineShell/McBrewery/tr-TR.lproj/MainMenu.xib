@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14A379a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="YBreweryApplication"/>
+        <menu title="Ana Menü" systemMenu="main" id="29">
+            <items>
+                <menuItem title="Caffeine" id="56">
+                    <menu key="submenu" title="Caffeine" systemMenu="apple" autoenablesItems="NO" id="57">
+                        <items>
+                            <menuItem title="Caffeine Hakkında" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="about:" target="494" id="624"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="669"/>
+                            <menuItem title="Tercihler..." enabled="NO" keyEquivalent="," id="wzk-y2-pEL">
+                                <connections>
+                                    <action selector="Preferences:" target="494" id="Wdo-Ld-Tuw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Profil Ayarları" enabled="NO" keyEquivalent="s" id="Icy-ZG-XPI">
+                                <connections>
+                                    <action selector="profilePreferences:" target="494" id="5e8-MH-qDy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Haritayı Göster..." hidden="YES" enabled="NO" id="MeD-Nc-iZa">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="ShowMapMenu:" target="494" id="Qju-vq-fWN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Caffeine-Inc Mail ve Caffeine ..." hidden="YES" id="KPA-7Q-EDP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showMailWindow:" target="494" id="WK5-aa-WLy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Caffeine Mail ..." hidden="YES" enabled="NO" id="RjC-2g-A3A">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openYMailWindow:" target="494" id="dsO-2e-EdY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Geliştirici Seçenekleri..." hidden="YES" id="129">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="preferences:" target="494" id="550"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Çerezleri kontrol et.." hidden="YES" id="5Cy-lp-W2a">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="debugCookies:" target="494" id="uVU-Il-Uwh"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Oturum Açarken Başlat" state="on" id="UfS-70-of1">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="autoStartLogin:" target="494" id="Dmx-ed-diY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="YMSGR için Varsayılan olarak ayarla" id="Slg-Pa-azH">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="setAsDefaultYMSGR:" target="494" id="LIe-8D-b0u"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Sohbet Geçmişi..." enabled="NO" id="728">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="conversationHistory:" target="494" id="739"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hizmetler" id="131">
+                                <menu key="submenu" title="Hizmetler" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Caffeine'ı Gizle" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Diğerleri Gizle" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tümünü Göster" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Oturumu Kapat " tag="1001" enabled="NO" id="730">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="logout:" target="494" id="733"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Her Yerden - Çık" enabled="NO" id="731">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="globalLogout:" target="494" id="735"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="674"/>
+                            <menuItem title="Caffeine'tan Ayrıl" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminateApp:" target="494" id="712"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Görüntüle" id="741">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Görüntüle" id="742">
+                        <items>
+                            <menuItem title="Çevrimdışı Kişileri Göster" id="743">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewMenusChange:" target="494" id="752"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Grupları Göster" id="744">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewMenusChange:" target="494" id="753"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="746"/>
+                            <menuItem title="Uygunluğa göre sırala" id="745">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewMenusChange:" target="494" id="754"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Ada göre sırala" id="747">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewMenusChange:" target="494" id="755"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Video" hidden="YES" id="661">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Video" id="662">
+                        <items>
+                            <menuItem title="Ayarlar" id="663">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="videoSettings:" target="494" id="666"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Konferanslar" id="664">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="videoConference:" target="494" id="667"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Düzenle" id="217">
+                    <menu key="submenu" title="Düzenle" id="205">
+                        <items>
+                            <menuItem title="Geri Al" keyEquivalent="z" id="207">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="223"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Yinele" keyEquivalent="Z" id="215">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="redo:" target="-1" id="231"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" hidden="YES" id="206">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Kes" keyEquivalent="x" id="199">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="228"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Kopyala" keyEquivalent="c" id="197">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="224"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Yapıştır" keyEquivalent="v" id="203">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="226"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Yapıştır ve Tarzla Eşleştir" hidden="YES" keyEquivalent="V" id="485">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="pasteAsPlainText:" target="-1" id="486"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Sil" hidden="YES" id="202">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="235"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tümünü Seç" keyEquivalent="a" id="198">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="232"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" hidden="YES" id="214">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bul" hidden="YES" id="218">
+                                <menu key="submenu" title="Bul" id="220">
+                                    <items>
+                                        <menuItem title="Bul..." tag="1" keyEquivalent="f" id="209">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="241"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Bul ve Değiştir..." tag="12" keyEquivalent="f" id="534">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="535"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Sonrakini Bul" tag="2" keyEquivalent="g" id="208">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="487"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Öncekini Bul" tag="3" keyEquivalent="G" id="213">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="488"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Bul için Seçimi Kullan" tag="7" keyEquivalent="e" id="221">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="489"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Seçime Sıçra" keyEquivalent="j" id="210">
+                                            <connections>
+                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="245"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Yazım Denetimi ve Dilbilgisi" hidden="YES" id="216">
+                                <menu key="submenu" title="Yazım Denetimi ve Dilbilgisi" id="200">
+                                    <items>
+                                        <menuItem title="Telaffuz ve Dilbilgisini Göster" keyEquivalent=":" id="204">
+                                            <connections>
+                                                <action selector="showGuessPanel:" target="-1" id="230"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Belgeyi Şimdi Kontrol Et" keyEquivalent=";" id="201">
+                                            <connections>
+                                                <action selector="checkSpelling:" target="-1" id="225"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="453"/>
+                                        <menuItem title="Yazarken Yazım Denetimi Yap" id="219">
+                                            <connections>
+                                                <action selector="toggleContinuousSpellChecking:" target="-1" id="222"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Yazım Denetimi Yaparken Dilbilgisini Kontrol Et" id="346">
+                                            <connections>
+                                                <action selector="toggleGrammarChecking:" target="-1" id="347"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Otomatik Yazım Denetimi Yap" id="454">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticSpellingCorrection:" target="-1" id="456"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Alternatifler" hidden="YES" id="348">
+                                <menu key="submenu" title="Alternatifler" id="349">
+                                    <items>
+                                        <menuItem title="Alternatifleri Göster" id="457">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontSubstitutionsPanel:" target="-1" id="458"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="459"/>
+                                        <menuItem title="Akıllı Kopyala/Yapıştır" tag="1" keyEquivalent="f" id="350">
+                                            <connections>
+                                                <action selector="toggleSmartInsertDelete:" target="-1" id="355"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Akıllı Alıntılar" tag="2" keyEquivalent="g" id="351">
+                                            <connections>
+                                                <action selector="toggleAutomaticQuoteSubstitution:" target="-1" id="356"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Akıllı Tireler" id="460">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticDashSubstitution:" target="-1" id="461"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Akıllı Bağlantılar" tag="3" keyEquivalent="G" id="354">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticLinkDetection:" target="-1" id="357"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Metin Değiştirme" id="462">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticTextReplacement:" target="-1" id="463"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Dönüşümler" hidden="YES" id="450">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Dönüşümler" id="451">
+                                    <items>
+                                        <menuItem title="Büyük Harf Yap" id="452">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="uppercaseWord:" target="-1" id="464"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Küçük Harf Yap" id="465">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="lowercaseWord:" target="-1" id="468"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Baş Harfini Büyük Yap" id="466">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="capitalizeWord:" target="-1" id="467"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Konuşma" id="211">
+                                <menu key="submenu" title="Konuşma" id="212">
+                                    <items>
+                                        <menuItem title="Konuşmayı Başlat" id="196">
+                                            <connections>
+                                                <action selector="startSpeaking:" target="-1" id="233"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Konuşmayı Durdur" id="195">
+                                            <connections>
+                                                <action selector="stopSpeaking:" target="-1" id="227"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Biçim" hidden="YES" id="375">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Biçim" id="376">
+                        <items>
+                            <menuItem title="Yazı Tipi" id="377">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Yazı Tipi" systemMenu="font" id="388">
+                                    <items>
+                                        <menuItem title="Yazı Tiplerini Göster" keyEquivalent="t" id="389">
+                                            <connections>
+                                                <action selector="orderFrontFontPanel:" target="420" id="424"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Kalın" tag="2" keyEquivalent="b" id="390">
+                                            <connections>
+                                                <action selector="addFontTrait:" target="420" id="421"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="İtalik" tag="1" keyEquivalent="i" id="391">
+                                            <connections>
+                                                <action selector="addFontTrait:" target="420" id="422"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Altını Çiz" keyEquivalent="u" id="392">
+                                            <connections>
+                                                <action selector="underline:" target="-1" id="432"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="393"/>
+                                        <menuItem title="Daha Büyük" tag="3" keyEquivalent="+" id="394">
+                                            <connections>
+                                                <action selector="modifyFont:" target="420" id="425"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Daha Küçük" tag="4" keyEquivalent="-" id="395">
+                                            <connections>
+                                                <action selector="modifyFont:" target="420" id="423"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="396"/>
+                                        <menuItem title="Çekirdek" id="397">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Çekirdek" id="415">
+                                                <items>
+                                                    <menuItem title="Varsayılanı kullan" id="416">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="useStandardKerning:" target="-1" id="438"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Hiçbirini kullanma" id="417">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="turnOffKerning:" target="-1" id="441"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Sıkıştır" id="418">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="tightenKerning:" target="-1" id="431"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Gevşet" id="419">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="loosenKerning:" target="-1" id="435"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem title="Bağlar" id="398">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Bağlar" id="411">
+                                                <items>
+                                                    <menuItem title="Varsayılanı kullan" id="412">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="useStandardLigatures:" target="-1" id="439"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Hiçbirini kullanma" id="413">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="turnOffLigatures:" target="-1" id="440"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Tümünü kullan" id="414">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="useAllLigatures:" target="-1" id="434"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem title="Taban çizgisi" id="399">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Taban çizgisi" id="405">
+                                                <items>
+                                                    <menuItem title="Varsayılanı kullan" id="406">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="unscript:" target="-1" id="437"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Üst simge" id="407">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="superscript:" target="-1" id="430"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Alt simge" id="408">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="subscript:" target="-1" id="429"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Kaldır" id="409">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="raiseBaseline:" target="-1" id="426"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="İndir" id="410">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="lowerBaseline:" target="-1" id="427"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="400"/>
+                                        <menuItem title="Renkleri Göster" keyEquivalent="C" id="401">
+                                            <connections>
+                                                <action selector="orderFrontColorPanel:" target="-1" id="433"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="402"/>
+                                        <menuItem title="Tarzı Kopyala" keyEquivalent="c" id="403">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="copyFont:" target="-1" id="428"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Tarzı yapıştır" keyEquivalent="v" id="404">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="pasteFont:" target="-1" id="436"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Metin" id="496">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Metin" id="497">
+                                    <items>
+                                        <menuItem title="Sola Hizala" keyEquivalent="{" id="498">
+                                            <connections>
+                                                <action selector="alignLeft:" target="-1" id="524"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Ortala" keyEquivalent="|" id="499">
+                                            <connections>
+                                                <action selector="alignCenter:" target="-1" id="518"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Yasla" id="500">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="alignJustified:" target="-1" id="523"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Sağa Hizala" keyEquivalent="}" id="501">
+                                            <connections>
+                                                <action selector="alignRight:" target="-1" id="521"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="502"/>
+                                        <menuItem title="Yazı Yönü" id="503">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Yazı Yönü" id="508">
+                                                <items>
+                                                    <menuItem title="Paragraf" enabled="NO" id="509">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                    <menuItem id="510">
+                                                        <string key="title">	Varsayılan</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeBaseWritingDirectionNatural:" target="-1" id="525"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem id="511">
+                                                        <string key="title">	Soldan Sağa</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeBaseWritingDirectionLeftToRight:" target="-1" id="526"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem id="512">
+                                                        <string key="title">	Sağdan Sola</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeBaseWritingDirectionRightToLeft:" target="-1" id="527"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem isSeparatorItem="YES" id="513"/>
+                                                    <menuItem title="Seçim" enabled="NO" id="514">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                    <menuItem id="515">
+                                                        <string key="title">	Varsayılan</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeTextWritingDirectionNatural:" target="-1" id="528"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem id="516">
+                                                        <string key="title">	Soldan Sağa</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeTextWritingDirectionLeftToRight:" target="-1" id="529"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem id="517">
+                                                        <string key="title">	Sağdan Sola</string>
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                        <connections>
+                                                            <action selector="makeTextWritingDirectionRightToLeft:" target="-1" id="530"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="504"/>
+                                        <menuItem title="Cetveli Göster" id="505">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleRuler:" target="-1" id="520"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Cetveli Kopyala" keyEquivalent="c" id="506">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="copyRuler:" target="-1" id="522"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Cetveli Yapıştır" keyEquivalent="v" id="507">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="pasteRuler:" target="-1" id="519"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Pencere" id="19">
+                    <menu key="submenu" title="Pencere" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Simge Durumuna Küçült" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Pencereyi Kapat" keyEquivalent="w" id="713">
+                                <connections>
+                                    <action selector="closeActiveWindow:" target="494" id="714"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Ana Pencereyi Göster" id="710">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showMainWindow:" target="494" id="711"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Tümünü Öne Getir" id="5">
+                                <connections>
+                                    <action selector="bringAllWindowsToFront:" target="494" id="715"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Kişiler" id="ORp-nS-Xzk">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Kişiler" id="p8k-I6-rDv">
+                        <items>
+                            <menuItem title="Kişi ekle" id="8hm-Hd-G9h">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="addContact:" target="494" id="S8D-M7-Vw6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Engellenen Kişileri Görüntüle ..." hidden="YES" id="bZ0-6O-are">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewBlockedContacts:" target="494" id="Kpa-r6-APU"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Yardım" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Yardım" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="Kullanıcı Değerlendirme Bildirimi..." id="670">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="userFeedback:" target="494" id="672"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tanılama Gönder..." id="627">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="reportIssue:" target="494" id="628"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Güncellemeleri Kontrol Et" id="VR4-ER-8hU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="494" id="I9a-46-e6e"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ZHL-Cb-b6v"/>
+                            <menuItem title="Kayıtları Etkinleştir" id="bq5-WF-ANM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="enableLogging:" target="494" id="1Yv-ti-2al"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Kayıt dosyasını aç" hidden="YES" id="2sz-b8-zPv">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openLogFile:" target="494" id="aYt-ei-IG9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Caffeine Yardım" keyEquivalent="?" id="492">
+                                <connections>
+                                    <action selector="showHelp:" target="494" id="2at-d9-ykH"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="494" customClass="YAppDelegate">
+            <connections>
+                <outlet property="CorporateEmail" destination="KPA-7Q-EDP" id="nMr-IL-2wd"/>
+                <outlet property="PreferencesMenuItem" destination="wzk-y2-pEL" id="DgK-XW-n3K"/>
+                <outlet property="ShowMap" destination="MeD-Nc-iZa" id="KTq-GL-ahR"/>
+                <outlet property="VideoMenuItem" destination="661" id="709"/>
+                <outlet property="CaffeineEmail" destination="RjC-2g-A3A" id="PS5-U3-630"/>
+                <outlet property="addContactMenuItem" destination="8hm-Hd-G9h" id="7rC-Qc-d9S"/>
+                <outlet property="contactsMenu" destination="ORp-nS-Xzk" id="gcG-7p-uQi"/>
+                <outlet property="conversationHistoryMenuItem" destination="728" id="740"/>
+                <outlet property="globalLogoutMenuItem" destination="731" id="737"/>
+                <outlet property="loggingEnabledMenuItem" destination="bq5-WF-ANM" id="Bag-PU-5gB"/>
+                <outlet property="logoutMenuItem" destination="730" id="736"/>
+                <outlet property="openLogFileItem" destination="2sz-b8-zPv" id="Hmz-zN-afZ"/>
+                <outlet property="preferencesMenuItem" destination="129" id="676"/>
+                <outlet property="profileSettingsMenuItem" destination="Icy-ZG-XPI" id="iMB-m3-ZZP"/>
+                <outlet property="sendDiagnosticsMenuItem" destination="627" id="726"/>
+                <outlet property="sendFeedbackMenuItem" destination="670" id="727"/>
+                <outlet property="setAsDefaultForYmsgr" destination="Slg-Pa-azH" id="0yo-mU-Gd7"/>
+                <outlet property="showGroupsMenuItem" destination="744" id="749"/>
+                <outlet property="showMainWindowItem" destination="710" id="eVk-j6-QTb"/>
+                <outlet property="showOfflineContactsMenuItem" destination="743" id="748"/>
+                <outlet property="sortByNameMenuItem" destination="747" id="751"/>
+                <outlet property="sortByPresenceMenuItem" destination="745" id="750"/>
+                <outlet property="startAtLoginMenuItem" destination="UfS-70-of1" id="hV9-O2-MZm"/>
+                <outlet property="viewBlockedContactsItem" destination="bZ0-6O-are" id="gZx-iM-pi3"/>
+                <outlet property="viewMenu" destination="741" id="756"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+    </objects>
+</document>

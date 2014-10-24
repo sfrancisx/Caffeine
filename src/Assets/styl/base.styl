@@ -1,0 +1,137 @@
+/*
+ * Copyright (c) 2013, Yahoo! Inc. All rights reserved.
+ * Copyrights licensed under the New BSD License.
+ * See the accompanying LICENSE file for terms.
+ */
+
+/*********
+	BASE STYLES: Contains the defaults. A base style says that wherever this element is in the application, it should look like this.
+**********/
+html,
+body {
+    font-size: 12px;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",
+      "Segoe UI Symbol", "Segoe UI", Helvetica, Tahoma, Arial, "Lucida Grande", sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+	-webkit-perspective: 0;
+	-webkit-transform-style: preserve-3d;
+
+	&.modalopen * { /* preventing all events when modal window is open */
+		pointer-events: none;
+	}
+
+	&.bodywithtabs {
+		background-color: rgb(46, 52, 62);
+	}
+}
+
+hr {
+    margin: 0;
+    height: 0;
+    border: 0 none;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="search"],
+textarea,
+[contenteditable]:focus {
+    outline: 0 none;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    margin: 1px 0 0;
+    height: 13px;
+    width: 13px;
+    vertical-align: middle;
+    background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+
+    &:checked::before {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-image: url("../src/Assets/images/icn-check.svg");
+        background-size: 100% 100%;
+        content: '';
+    }
+}
+
+[contenteditable]:empty::after {
+    content: attr(placeholder);
+    font-style: italic;
+    color: rgba(255,255,255,.25);
+}
+
+img[data-emoticon="true"] {
+    vertical-align: text-top;
+}
+
+/*image exif orientation fixes*/
+img {
+	&[data-orientation="2"] {
+		-webkit-transform: scale(-1, 1);
+	}
+
+	&[data-orientation="3"] {
+		-webkit-transform: scale(-1, -1);
+	}
+
+	&[data-orientation="4"] {
+		-webkit-transform: scale(1, -1);
+	}
+
+	&[data-orientation="5"] {
+		-webkit-transform: scale(-1, 1) rotate(90deg);
+	}
+
+	&[data-orientation="6"] {
+		-webkit-transform: rotate(90deg);
+	}
+
+	&[data-orientation="7"] {
+		-webkit-transform: scale(1, -1) rotate(90deg);
+	}
+
+	&[data-orientation="8"] {
+		-webkit-transform: rotate(-90deg);
+	}
+}
+

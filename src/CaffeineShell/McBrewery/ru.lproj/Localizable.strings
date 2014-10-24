@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Без доступа к вашему набору ключей невозможно сохранить ваши регистрационные данные";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Возникла ошибка (%d) при попытке доступа к вашему набору ключей. При повторном возникновении данной ошибки обратитесь в службу поддержки Caffeine.";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Ваша версия Caffeine сильно устарела и нуждается в обновлении";
+
+/* why we ask for location access */
+"locpurpose" = "По вашему желанию Caffeine может показывать ваше местоположение вашим друзьям";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Возникла непредвиденная ошибка. Необходимо перезапустить Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Сохранить";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Спасибо за представленную вами информацию диагностики";
+
+/* OK - to use in alert dialog  */
+"OK" = "ОК";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Служба мгновенных сообщений Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Ответить";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Требуется отправка журнала вручную. Файл архива можно найти по адресу ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Отправка журналов не удалась. Удалите или переименуйте файл ~/Downloads/CaffeineLogs.zip и повторите попытку";
+
+/* Notification that you were disconnected */
+"disconnected" = "Вы отключены от Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Выход";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Выйти из всех сервисов";
+
+/* A new update is available to install  */
+"updateAvailable" = "Для установки доступно новое обновление. Необходими закрыть приложение.";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "В URL обнаружена ошибка, загрузка невозможна";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Подождите";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "Доступно новое обновление. Хотите установить его сейчас и перезапустить программу?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "Доступно новое обновление. Нажмите кнопку «ОК», чтобы установить его и перезапустить программу.";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "Было найдено и автоматически загружено обновление";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Файл образа Caffeine установлен в режиме «только для чтения», поэтому его автоматическое обновление невозможно. Чтобы поддерживать его в актуальном состоянии, скопируйте его в папку /Программы.";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Не удалось переместить файл в папку «Программы».";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Не перемещать";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Если необходимо, перемещение в папку «Программы» может быть выполнено автоматически.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Переместить в папку «Программы»";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Переместить файл в папку «Программы» в домашней папке?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Переместить в папку «Программы»?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Для этого потребуется ввести пароль администратора.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Это действие позволит упорядочить файлы в папке «Загрузки».";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine уже пытается загрузить обновление.";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine уже является обработчиком по умолчанию для ссылок YMSGR.";
+
+/* About menu item */
+"about" = "О приложении";
+

@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Without access to your keychain, it won't be possible to save your login credentials";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "There was an error (%d) accessing your user keychain. If this persists, contact Caffeine Support";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "You are running a very old version of Caffeine which you should upgrade";
+
+/* why we ask for location access */
+"locpurpose" = "Optionally, Caffeine can share your location witn your friends";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "There was an unexpected error. Please restart Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Save";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Thank you for submitting diagnostics";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Reply";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Require manual log submission - you can find the zip at ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Submit logs failed - First remove or rename file at ~/Downloads/CaffeineLogs.zip and then try again";
+
+/* Notification that you were disconnected */
+"disconnected" = "You were disconnected from Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Sign out";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Sign out everywhere";
+
+/* A new update is available to install  */
+"updateAvailable" = "A new update is available to be installed, but you need to quit the application";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Failed to load URL with error";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Wait";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "A new update is available to be installed. Would you like to install it now and restart?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "A new update is available to be installed, press OK to install and restart";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "A new update was found and downloaded automatically";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine can't auto-update as it's installed in a read-only image. Please copy it to /Applications to keep it up to date.";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Could not move to Applications folder";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Do not move";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "I can move myself to the Applications folder if you like.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Move to Applications folder";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Move to Applications folder in your Home folder?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Move to Applications folder?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Note that this will require an administrator password.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "This will keep your Downloads folder uncluttered.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine is already trying to download an update";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine is already the default handler for YMSGR links";
+
+/* About menu item */
+"about" = "About";
+

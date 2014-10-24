@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  McBrewery
+
+  Created by Fernando on 10/4/13.
+  Copyright (c) 2014 Caffeine!. All rights reserved.
+*/
+
+
+/* use denied access to the system keychain, so we can't save the login credentials */
+"userDeniedKC" = "Utan tillgång till din nyckelring så kommer dina inloggningsuppgifter inte kunna sparas";
+
+/* we had an error accessing the sysmtem keychain */
+"errorKC" = "Ett fel inträffade (%d) vid kontakten med din nyckelring, kontakta Caffeines support om det kvarstår";
+
+/* to prevent users from running very old versions of Caffeine */
+"timebomb" = "Du använder en gammal version av Caffeine och bör uppdatera den";
+
+/* why we ask for location access */
+"locpurpose" = "Om du vill så kan du dela din plats med dina vänner på Caffeine";
+
+/* A renderer crash was just detected  */
+"rendercrash" = "Ett oväntat fel inträffade. Starta om Caffeine";
+
+/* Save - to use in multiple files transfer as the default button  */
+"Save" = "Spara";
+
+/* diagnostics submitted successfully */
+"submit_ok" = "Tack för att du skickade in diagnostik";
+
+/* OK - to use in alert dialog  */
+"OK" = "OK";
+
+/* Caffeine - to use in alert dialog, etc */
+"Caffeine" = "Caffeine";
+
+/* Reply - to use in user notifications  */
+"Reply" = "Svara";
+
+/* diagnostics couldn't be submitted, saving to a local file */
+"submit_local_file" = "Du måste skicka in loggfiler manuellt, ZIP-filen finns på ";
+
+/* diagnostics couldn't be submitted, FAILED saving to a local file */
+"saving_local_file_failed" = "Loggfilerna kunde inte skickas, ta bort eller döp om filen ~/Downloads/CaffeineLogs.zip och försök sedan igen";
+
+/* Notification that you were disconnected */
+"disconnected" = "Du kopplades ifrån Caffeine";
+
+/* Sign out menu item */
+"disconnect" = "Logga ut";
+
+/* Sign out Everywhere menu item */
+"disconnectAll" = "Logga ut överallt";
+
+/* A new update is available to install  */
+"updateAvailable" = "En ny uppdatering är tillgänglig och kan installeras men du måste avsluta programmet";
+
+/* Failed to load this page  */
+"failedToLoadURL" = "Kunde inte ladda adressen med fel";
+
+/* Wait - to use in alert dialog  */
+"Wait" = "Vänta";
+
+/* A download was available - want to to install it now  */
+"updateNeedsRestart" = "En ny uppdatering finns tillgänglig att installera. Vill du installera den nu och starta om?";
+
+/* A download is available - press OK to restart  */
+"updateNeedsRestart2" = "En ny uppdatering finns tillgänglig att installera. Tryck på OK för att installera och starta om";
+
+/* A new update is available to install  */
+"startingDownloadingUpdate" = "En ny uppdatering hittades och har automatiskt laddats ner";
+
+/* App installed in READ ONLY directory/DMG  */
+"appReadOnly" = "Caffeine kan inte uppdateras automatiskt eftersom det är installerad i en skrivskyddad bild. Kopiera appen till /Appar för att hålla den uppdaterad";
+
+/* No comment provided by engineer. */
+"Could not move to Applications folder" = "Kunde inte flytta till mappen Appar";
+
+/* dialog for Moving to Applications */
+"Do Not Move" = "Flytta inte";
+
+/* dialog for Moving to Applications */
+"I can move myself to the Applications folder if you'd like." = "Jag kan flytta mig själv till mappen Appar om du vill.";
+
+/* dialog for Moving to Applications */
+"Move to Applications Folder" = "Flytta till mappen Appar";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder in your Home folder?" = "Flytta till mappen Appar i din hemmapp?";
+
+/* dialog for Moving to Applications */
+"Move to Applications folder?" = "Flytta till mappen Appar?";
+
+/* dialog for Moving to Applications */
+"Note that this will require an administrator password." = "Observera att detta kräver ett administratörslösenord.";
+
+/* dialog for Moving to Applications */
+"This will keep your Downloads folder uncluttered." = "Detta kommer att hålla ordning på din hämtningsmapp.";
+
+/* Checking on update option when an update is already running */
+"updateIsRunning" = "Caffeine är redo att hämta en uppdatering";
+
+/* setting Caffeine to be default for YMSGR */
+"setDefaultForYmsgr" = "Caffeine är redan standardprogram för YMSGR-länkar";
+
+/* About menu item */
+"about" = "Om";
+
